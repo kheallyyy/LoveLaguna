@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Laguna</title>
+    <title>Love Laguna</title>
+    <link rel="stylesheet" type="text/css" href="place.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <title>LoveLaguna:Mga Lugar</title>
+</head>
+  
+<body>
+<!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand"><img src="images/logo.png" width="125"></a>
+            <div class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Destination</button>
+                    <div class="dropdown-content">
+                        <a href="PlaceYouCanGo.html">Destination You Can Go</a>
+                        <a href="FoodAndRestaurant.html">Food and Restaurants</a>
+                        <a href="HotelAndResort.html">Hotel and Resorts</a>
+                    </div>
+                </div>
+               
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+<!-- end of navbar  -->
+
+<div class="small-container">
+            <div class="row row-2"><br>
+                <h1><center>Places to visits in Laguna Province</center></h1>
+            </div>
+    <div class="container">
+       
+            <section class="places-section">
+                <!-- Add an onclick event to the image to toggle the expanded text -->
+                <h2>Banga <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('Banga, Calamba, Laguna')"></i></h2>
+                <img src="Images/banga.jpeg" alt="Banga" style="height: 210px; width: 370px;" onclick="toggleExpandedText('BANGA')">
+                <div class="place-info">
+                    <i class="fas fa-star"></i> 4.5 (213 Reviews) <br>
+                </div>
+                <!-- Add a class to the expanded text div -->
+                <div id="BANGA-details" class="place-details expanded-text">
+                    <dd><p>The Spanish name Calamba City, derived from the name of the enormous clay pot, Kalambanga, is derived from the story of a young girl who mistakenly guessed the location as Kalambanga due to her inability to speak Spanish. The name Kalan and Banga, which translates to "clay stove" and "clay pot," was mistakenly given to the Spanish soldiers, leading to the abbreviation of Calamba. The name Kalambanga is a testament to the city's rich history and cultural heritage.</p></dd>
+                </div>
+            </section>
+
+            <section class="places-section">
+                <h2>St. John the Baptist Parish Church <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('St. John the Baptist Parish Church, Calamba, Laguna')"></i></h2>
+                <img src="Images/Church-of-St.-John-the-Baptist-4.jpg" alt="St. John the Baptist Church" style="height: 210px; width: 370px;" onclick="toggleExpandedText('church')">
+                <div class="place-info">
+                    <i class="fas fa-star"></i> 4.7 (427 Reviews) <br>
+                </div>
+                <div id="church-details" class="place-details expanded-text">
+                 <dd><p>Catholic church in Calamba, Laguna, is St. John the Baptist Parish Church, sometimes referred to as Calamba Church. This church, which was located across from Calambanga and the Rizal Shrine, is where Jose Rizal was baptized.</p></div>
+                </div>
+            </section>
+
+        <section class="places-section">
+            <h2>Enchanted Kingdom <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('Laguna de Bay, Calamba, Laguna')"></i></h2>
+            <img src="Images/EK.jpg" alt="Enchanted Kingdom" style="height: 210px; width: 370px;"onclick="toggleExpandedText('Laguna')">
+            <div class="place-info">
+                <i class="fas fa-star"></i> 4.7 (200 Reviews) <br>
+            </div>
+            <div id="Laguna-details" class="place-details expanded-text">
+            <dd><p>Amusement park with roller coasters, splash rides & a Ferris wheel, plus live shows.</p></dd>
+            </div>
+        </section>
+
+        <section class="places-section">
+            <h2>Cavinti Falls <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('Rockpoint, Pansol, Calamba, Laguna')"></i></h2>
+            <img src="Images/Cavitifalls.jpg" alt="Cavinti Falls" style="height: 210px; width: 370px;"onclick="toggleExpandedText('Rock')">
+            <div class ="place-info">
+                <i class="fas fa-star"></i> 4.6 (180 Reviews) <br>
+            </div>
+            <div id="Rock-details" class="place-details expanded-text">
+            <dd><p>Multitiered waterfall reached by a hike through jungle or by river canoe through a narrow gorge.</p></dd>
+            </div>
+        </section>
+
+        <section class="places-section">
+            <h2>Laguna de Bay <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('Petty John Studio, 37 Purok 5 Bucal, Calamba City, Laguna')"></i></h2>
+            <img src="Images/Laguna De Bay.jpg" alt="Laguna de Bay" style="height: 210px; width: 370px;"onclick="toggleExpandedText('Studio')">
+            <div class="place-info">
+                <i class="fas fa-star"></i> 4.9 (220 Reviews) <br>
+            </div>
+            <div id="Studio-details" class="place-details expanded-text">
+            <dd><p>Calamba City situated along Laguna de Bay takes advantage of its opportunities. All year round, tourists are attracted to the famous Wonder Island, set in the middle of the lake. This provides not only picturesque view but more so private jet-ski facilities and boat sailing thrills. Laguna de Bay is a large shallow freshwater body in the heart of Luzon Island with an aggregate area of about 911 km2 (352 sq mi) and a shoreline of 220 km (140 mi). It is considered to be the third largest inland body of water in Southeast Asia after Tonle Sap in Cambodia and Lake Toba in Sumatra, Indonesia. Laguna de Bay is bordered by the province of Laguna in the east, west and southwest, the province of Rizal in the north to northeast, and Metropolitan Manila in the northwest. The lake has an average depth of 2.8 meters (9 ft 2 in) and its excess water is discharged through the Pasig River.</p></dd>
+            </div>
+        </section>
+
+        <section class="places-section">
+            <h2>Mt. Makiling <i class="fas fa-map-marker-alt" onclick="openGoogleMaps('Mount Makiling, Calamba, Laguna')"></i></h2>
+            <img src="Images/Mt. Makiling.jpg" alt="Mt. Makiling" style="height: 210px; width: 370px;"onclick="toggleExpandedText('Makiling')">
+            <div class="place-info">
+                <i class="fas fa-star"></i> 4.7 (190 Reviews) <br>
+            </div>
+            <div id="Makiling-details" class="place-details expanded-text">
+            <dd><p>Mt. Makiling Forest Reserve serves the interest of adventurous people who love mountain climbing, bird watching, nature gazing, and camping. Mt, Makiling with its foot resting on the side of the city is the best venue for such gratification. And for those plant lovers, ornamental gardens are abounding in Barangays Real, Pansol, and Bagong Kalsada. They sell different kinds of plants, compost, fertilizers, pots, tools, and landscaping products. Mount Makiling is an inactive stratovolcano located in the provinces of Laguna and Batangas on the island of Luzon in the Philippines. The mountain rises to an elevation of 1,090 meters above mean sea level and is the highest feature of the Laguna Volcanic Field. The volcano has no recorded historic eruption, but volcanism is still evident through geothermal features like mud springs and hot springs. South of the mountain is the Makiling–Banahaw Geothermal Plant. The Philippine Institute of Volcanology and Seismology classifies the volcano as "Inactive". Mount Makiling is a state-owned forest reserve administered by the University of the Philippines Los Baños. Prior to its transfer to the university, the mountain was the first national park of the Philippines. Mount Makiling National Park was established on February 23, 1933, by Proclamation No. 552.</p></dd>
+            </div>
+        </section>
+    </div>
+
+    
+</div>
+    <script>
+        function openGoogleMaps(location) {
+            window.open('https://www.google.com/maps/search/' + encodeURI(location));
+        }
+        
+        function toggleDetails(destination) {
+            const details = document.getElementById(`${destination}-details`);
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+        
+        function toggleExpandedText(destination) {
+            const details = document.getElementById(`${destination}-details`);
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+   
+
+<!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand"><img src="images/logo.png" width="120">
+                </a>
+                <a href = "index.html" class = "Calamba Logo"><img src="images/calambalogo.png" width="100">
+                </a>
+                    <p class = "text"><center>Discover Laguna Province—a place where natural wonders and rich heritage meet. Nestled in the heart of the Philippines, Laguna is famed for its scenic lakes, hot springs, and majestic waterfalls. Explore historic sites, sample local delicacies, and immerse yourself in a vibrant culture that celebrates tradition and nature. Whether you're seeking adventure or relaxation, Laguna offers a unique escape into the beauty and warmth of Southern Luzon.</center></p>
+                </div>
+
+                <a href="LoveLaguna@gmail.com"><center>LoveLaguna@gmail.com</center></a>
+                <br>
+                <hr>
+                <p class="copyright"><center>Created by AFA</center></p>
+                <p class="copyright"><center>Copyright 2024</center></p>
+              </div>
+
+        </footer>
+<!-- end of footer -->
+
+</body>
+</html>

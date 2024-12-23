@@ -1,0 +1,282 @@
+ /* General Styles */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, rgb(17, 177, 218) , yellow);
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+.navbar {
+        background-color: #ffd500; 
+        overflow: hidden;
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .navbar a:hover{
+        background-color: #D3B683; /* Darker sage green on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 90px;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #334c3b; 
+    }
+
+    .navbar a.active {
+        color: white;
+    }
+
+    .navbar .icon {
+        display: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #d3e0dc; 
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: #333; 
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #c7dbc9; 
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar a:not(:first-child),
+        .dropdown .dropbtn {
+            display: none;
+        }
+
+        .navbar a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar.responsive a,
+        .navbar.responsive .dropdown {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar.responsive a,
+        .navbar.responsive .dropdown {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar.responsive {
+            position: relative;
+        }
+
+        .navbar.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .navbar.responsive a,
+        .navbar.responsive .dropdown {
+            display: block;
+            text-align: center;
+        }
+    }
+
+
+
+/* Image Hover Effect */
+img {
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+border-radius: 10px;
+}
+
+img:hover {
+transform: scale(1.06);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button and Icon Animations */
+.btn-icon,
+.navbar a,
+.dropdown .dropbtn,
+.contact input[type="submit"] {
+transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-icon:hover,
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.contact input[type="submit"]:hover {
+background-color: #5b7e43; 
+transform: scale(1.05);
+}
+
+/* Footer Styles */
+.footer-item a:hover {
+color: #5b7e43; 
+}
+
+/* Copyright Text */
+.copyright {
+font-size: 12px;
+color: #666;
+}
+
+/* Additional Animations */
+@keyframes iconColorChange {
+0% {
+    color: #fff;
+}
+50% {
+    color: #5b7e43; 
+}
+100% {
+    color: #fff;
+}
+}
+
+.dropdown:hover .dropbtn i {
+animation: iconColorChange 1s infinite;
+}
+
+.transportation-section {
+        background-color: #f9f9f9;
+        padding: 10px; 
+        margin: 20px 0;
+        border-radius: 1px; 
+    }
+
+    .transportation-item {
+        margin-top: 15px; 
+    }
+
+    .transportation-item h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 5px; 
+        background-color: #d3e0dc;
+        border-radius: 1px; 
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .transportation-item h3:hover {
+        background-color: #c7dbc9;
+    }
+
+    .transportation-details {
+        display: none;
+        margin-top: 5px; 
+        
+    }
+
+    .transportation-details p {
+        margin-bottom: 5px; 
+    }
+
+
+    /* Floating Car Animation */
+    @keyframes floatingCar {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .floating-car {
+        font-size: 24px;
+        animation: floatingCar 2s infinite;
+    }
+.places-section {
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+
+    .places-section h2 {
+        color: #333;
+    }
+
+    .places-section p {
+        color: #666;
+    }
+
+    .places-section .place-info {
+        margin-top: 10px;
+    }
+
+    .places-section .social-icons a {
+        color: #007bff;
+        margin-right: 10px;
+    }
+    .places-section .expanded-text {
+    display: none;
+    margin-top: 10px;
+    }
